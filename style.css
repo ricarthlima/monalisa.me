@@ -1,67 +1,142 @@
-.subtopic{
-    background: #B39488;
-    padding-top: 10px;
-    padding-bottom: 10px;    
-    color: white;
-    font-size: 1.3em;
-    font-family: 'Karla', sans-serif;
+/*Define configurações padrão para tags, por exemplo, tudo dentro de body*/
+body{
+    font-family: 'Roboto', sans-serif;
+    /*Coloquei essas duas margens abaixo para que o conteúdo não fique esticado na tela. Porém, isso não é responsivo.*/
+    margin-right: auto; 
+    margin-left: auto;
+    max-width: 1000px;
 }
 
-.titlearea{
-    background: #FF9688;
+/*Atalhos: Classes simples e úteis que podem ser usadas a qualquer momento.*/
+.ml-sm{
+    margin-left: 5px;
+}
+
+.mr-sm{
+    margin-right: 5px;
+}
+
+.mt-sm{
+    margin-top: 5px;
+}
+
+.mb-sm{
+    margin-bottom: 5px;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-sm{
+    font-size: 0.75em;
+}
+
+/*Mudar cor dos links*/
+
+/*remove sublinhado*/
+a{
+    text-decoration:none; 
+}
+
+/*link não visitado*/
+a:link{
+    color: white;
+}
+
+/*link visitado*/
+a:visited{
+    color: aliceblue;
+}
+
+/*mouse sobre link*/
+a:hover{
+    color:antiquewhite;
+}
+
+/*link clicado*/
+a:active{
+    color:aquamarine;
+}
+
+
+/*Classes possivelmente compartilhadas por vários HTML*/
+.navbar{
+    background: #8c807dff;
+    padding: 5px 0px;     
+}
+
+.navbar-table{
+    color: white; 
+    font-size: 0.8em;
+}
+
+.navbar-img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+/*Classes do arquivo index.HTML*/
+.header{
     padding-top: 20px;
     padding-bottom: 20px;
-    
+    background: #FF9688;
 }
 
-.titleimg{
-    width: 200px;
+.header-img{
     height: 200px;
+    width: 200px;
     border: 7px solid white;
     border-radius: 50%;
 }
 
-.titlebigtext{
-    color: #5c5a61;
-    font-size: 2em;
+.header-title{
     font-family: 'Karla', sans-serif;
-    font-weight: bolder;
-    margin-bottom: 3px;
+    font-size: 2em;
+    color: #5c5a61;
 }
 
-.titlespan{
-    font-family: 'Roboto', sans-serif;
+.header-subtitle{
     color: #5c5a61;
-    font-size: 1em;
+}
+
+.subtopic{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #B39488;
+    color: white;
+    font-size: 1.1em;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-weight: bolder;
 }
 
 .subtopic-text{
-    padding: 15px 30px;
+    padding: 5px 20px;
+    font-size: 0.9em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.table-img{
+    height: 55px;
+    width: auto;
 }
 
 .footer{
     background: #5C5A61;
     padding-top: 15px;
     padding-bottom: 15px;
-    color: white;
-    font-size: 0.9em;
-    font-family: 'Roboto', sans-serif;
+    font-size: 0.7em;
     text-align: center;
-}
-
-.navbar{
-    background: #8c807dff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.75em;
     color: white;
-    padding: 5px 10px 5px 10px;
-    height: 40px;
-    line-height: 20px;
 }
 
-.navimg{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-right: 15px;
+.footer-icon{
+    font-size: 2em;
 }

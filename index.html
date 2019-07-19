@@ -1,87 +1,138 @@
 <html>
     <head>
+        <!-- Definição do Título da Aba -->
         <title>Monalisa Sousa</title>
-        <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
-        <link rel="shortcut icon" href="images/favicon.ico" />
-        <link rel="stylesheet" type="text/css" href="style.css"  />
+        <!-- Definição do Favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <!-- Importação do Arquivo CSS -->
+        <link href="style.css" rel="stylesheet">
+        <!-- Importação das fontes Roboto e Karla -->
+        <link href="https://fonts.googleapis.com/css?family=Karla|Roboto&display=swap" rel="stylesheet"> 
+        <!-- Importação dos arquivos do FontAwesome-->
+        <link href="fa/css/all.css" rel="stylesheet">
     </head>
-
     <body>
         <!--Navbar-->
-        <div class="navbar">
+        <div class = "navbar">
             <center>
-                <img src="images/photo.png" class="navimg">                  
-                Sobre Mim -
-                Conhecimentos -
-                Formação Acadêmica - 
-                Idiomas - 
-                Congressos e Capacitações
+                <table class = "navbar-table">
+                    <tbody>
+                        <tr>
+                            <td><img src = "images/me.jpg" class = "navbar-img mr-sm"></td>
+                            <!--Os links abaixo levam para áreas da própria páginas definidas pro id. Por isso o #. -->
+                            <td><a href = "#sobremim">Sobre Mim</a> -</td>
+                            <td><a href = "#conhecimentos">Conhecimentos</a> -</td>
+                            <td><a href = "#formacao">Formação Acadêmica</a> -</td>
+                            <td><a href = "#idiomas">Idiomas</a> -</td>
+                            <td><a href = "#congressos">Congressos e Capacitações</a></td>
+                        </tr>
+                    </tbody>
+                </table>
             </center>
         </div>
 
+
         <!--Cabeçalho-->
-        <div class="titlearea"> 
-            <center>
-                <img src="images/photo.png" class="titleimg">
-                <h1 class="titlebigtext">Monalisa Meyrelle de Sousa Silva</h1>
-                <span class="titlespan">Feito com Html e ❤️.</span>
-            </center>
-            
+        <div class = "header">
+                <center>
+                    <img src = "images/me.jpg" class = "header-img">
+                    <h1 class = "header-title mb-sm">Monalisa Meyrelle de Sousa Silva</h1>
+                    <span class = "header-subtitle">Feito com HTML e ❤️.</span>
+                </center>
         </div>
 
         <!--Sobre Mim-->
-        <div class="subtopic">
-            <center><strong>Sobre Mim</strong> </center>
+        <div class = "subtopic" id = "sobremim">
+            Sobre Mim
         </div>
-        <div class="subtopic-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et ex dolor. Sed bibendum nunc ut ullamcorper imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+
+        <div class = "subtopic-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et ex dolor. Sed bibendum nunc ut ullamcorper imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
         </div>
 
         <!--Conhecimentos-->
-        <div class="subtopic">
-            <center><strong>Conhecimentos</strong> </center>
+        <div class = "subtopic" id = "conhecimentos">
+            Conhecimentos
         </div>
 
-        <!--Formação Academica-->
-        <div class="subtopic">
-            <center><strong>Formação Acadêmica</strong> </center>
+        <div class = "subtopic-text">
+            <center>    
+                <table>
+                    <tbody>
+                        <!--Imagens-->
+                        <tr>
+                            <td><center><img src = "images/python.png" class = "table-img"></center></td>
+                            <td><center><img src = "images/office.png" class = "table-img"></center></td>
+                            <td><center><img src = "images/windows.png" class = "table-img"></center></td>
+                            <td><center><img src = "images/sql.png" class = "table-img"></center></td>
+                            <td><center><img src = "images/ror.jpg" class = "table-img"></center></td>
+                        </tr>
+
+                        <!--Titulos-->
+                        <tr class = "text-bold text-center">
+                            <td>Python</td>
+                            <td>MS Office / Google Drive</td>
+                            <td>Windows</td>
+                            <td>SQL</td>
+                            <td>MVC</td>
+                        </tr>
+
+                        <!--Descrições-->
+                        <tr class = "text-center text-sm">
+                            <td>Uso acadêmico à mais de 2 anos.</td>
+                            <td>Domínio das ferramentas de edição de texto, slides e planilhas. Também no Google Docs.</td>
+                            <td>Familiaridade e facilidade com o SO da Microsoft.</td>
+                            <td>Uso acadêmico à mais de 1 ano.</td>
+                            <td>Noções no projeto "É vegano?".</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
         </div>
-        <div class="subtopic-text">
+
+        <!--Formação Acadêmica-->
+        <div class = "subtopic" id = "formacao">
+            Formação Acadêmica
+        </div>
+
+        <div class = "subtopic-text">
             <ul>
                 <li>Graduação em Sistemas de Informação – Universidade Federal de Pernambuco - (em andamento)</li>
                 <li>Ensino Médio Completo - Colégio Presbiteriano Agnes Erskine - 2011</li>
             </ul>
-        </div>
+        </div>        
 
         <!--Idiomas-->
-        <div class="subtopic">
-            <center><strong>Idiomas</strong> </center>            
-        </div>
-        <div class="subtopic-text">
-            <ul>
-                <li>Inglês-Elementary</li>
-            </ul>
+        <div class = "subtopic" id = "idiomas">
+            Idiomas
         </div>
 
+        <div class = "subtopic-text">
+            <ul>
+                <li>Inglês - Elementary</li>
+            </ul>
+        </div>       
+
         <!--Congressos e Capacitações-->
-        <div class="subtopic">
-            <center><strong>Congressos e Capacitações</strong> </center>
+        <div class = "subtopic" id = "congressos">
+            Congressos e Capacitações
         </div>
-        <div class="subtopic-text">
+
+        <div class = "subtopic-text">
             <ul>
                 <li>Marketing Digital - Cresça com o Google (2017)</li>
             </ul>
-        </div>
+        </div>        
 
         <!--Rodapé-->
-        <div class="footer">
-                Você pode me encontrar nas minhas redes sociais:</br>
-                <a href="mailto:mmss@cin.ufpe.br" target="_blank">Email</a> -
-                <a href="https://github.com/Monaliisa" target="_blank">GitHub</a>  - 
-                <a href="https://www.linkedin.com/in/monalisa-sousa-3b3331153/" target="_blank">LinkedIn</a> - 
-                <a href="https://www.instagram.com/monaliisasousa/" target="_blank">Instagram</a> -
-                <a href="https://www.facebook.com/monalisa.meyrelle" target="_blank">Facebook</a>                
+        <div class = "footer">
+            Você pode me encontrar nas minhas redes sociais:<br>
+            <!-- Substitui os nomes por icones do FontAwesome, veja um exemplo em: https://fontawesome.com/icons/facebook-square?style=brands-->
+            <a class="fas fa-envelope footer-icon mt-sm mr-sm" href = "mailto:mmss@cin.ufpe.br"></a>
+            <a class="fab fa-github footer-icon mr-sm" href = "https://github.com/Monaliisa" target="_blank"></a>
+            <a class="fab fa-linkedin footer-icon mr-sm" href = "https://www.linkedin.com/in/monalisa-sousa-3b3331153/" target="_blank"></a> 
+            <a class="fab fa-instagram footer-icon mr-sm" href = "https://www.instagram.com/monaliisasousa/" target="_blank"></a>
+            <a class="fab fa-facebook-square footer-icon" href = "https://www.facebook.com/monalisa.meyrelle" target="_blank"></a>                
         </div>
     </body>
 </html>
